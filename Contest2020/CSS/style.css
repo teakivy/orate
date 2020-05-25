@@ -1,0 +1,95 @@
+*:focus {
+    outline: none;
+}
+
+@font-face {
+  font-family: "arizonia";
+  src: url(fonts/Pacifico-Regular.ttf);
+}
+
+
+body {
+  background-color: #F3F3F3;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  margin: 0;
+}
+
+ul.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #1f2732;
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  align-items: center
+}
+
+.tab {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 3px 12px;
+  text-decoration: none;
+  font-family: arizonia;
+  align-items: center;
+}
+
+
+.main {
+margin-top: 10%
+}
+
+.fname {
+  width: 60%;
+  font-size: 30px;
+  border-radius: 50px;
+  border-style: solid;
+  border-color: #d4d4d4;
+  padding: 10px;
+  padding-right: 25px;
+  padding-left: 25px;
+  color: #323232;
+  border-width: 1px;
+}
+.fname:hover {
+  box-shadow: 1px 1px 20px 0 rgba(0, 0, 0, 0.19), 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+.fname:active {
+  box-shadow: 1px 1px 20px 0 rgba(0, 0, 0, 0.19), 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+.fname:focus {
+  box-shadow: 1px 1px 20px 0 rgba(0, 0, 0, 0.19), 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+
+.title {
+  font-family: arizonia;
+  position: relative;
+  font-size: 100px;
+  text-shadow: 6px 6px 20px rgba(0, 0, 0, 0.19);
+  color: #43C4EA;
+}
+
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #BDBDBD;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #BDBDBD;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #BDBDBD;
+}
+
+@media screen and (max-width:1200px) {
+  .fname {
+    width: 85%;
+  }
+}
